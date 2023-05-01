@@ -1,5 +1,5 @@
 html{
-    background-image: url('ubuntu-16-04-lts-Desktop-fondo.png');
+    background-image: url('warty-final-ubuntu.png');
     background-size: cover;
 }
 
@@ -75,8 +75,9 @@ input[type="number"] {
     text-align: right;
 }
 
-.list{
+#list{
     height: 24rem;
+    overflow-y: scroll;
 }
  
 @media (max-width: 767px) {
