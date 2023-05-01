@@ -1,14 +1,31 @@
+// ID が "list" の div 要素を取得する関数
+function getListDiv() {
+    return document.getElementById("list");
+}
+
+// input 要素を作成する関数
+function createInput(type) {
+    const input = document.createElement("input");
+    input.type = type;
+    input.classList.add("flex-item");
+    return input;
+}
+
+// input 要素を #list に追加する関数
+function appendInputToDiv(input) {
+    const listDiv = getListDiv();
+    
+    listDiv.appendChild(input);
+}
+
+
 function add_list(){
-    // ID が "list" の div 要素を取得
-const listDiv = document.getElementById("list");
-
-// input 要素を作成し、div 要素に追加する
-const numberInput = document.createElement("input");
-numberInput.type = "number";
-listDiv.appendChild(numberInput);
-
-const textInput = document.createElement("input");
-textInput.type = "text";
-listDiv.appendChild(textInput);
+    // number input 要素を作成し、#list に追加する
+    const numberInput = createInput("number");
+    appendInputToDiv(numberInput);
+    
+    // text input 要素を作成し、#list に追加する
+    const textInput = createInput("text");
+    appendInputToDiv(textInput);
 
 }
