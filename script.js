@@ -11,7 +11,7 @@ function createInput(type) {
     if (type == "text") {
         input.setAttribute("placeholder","内容");
     }else if (type == "number") {
-        inputsetAttribute("placeholder","時間");
+        input.setAttribute("placeholder","時間");
     }
     return input;
 }
