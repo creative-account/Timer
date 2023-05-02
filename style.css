@@ -83,6 +83,14 @@ input.flex-item{
     height: 24rem;
     overflow-y: scroll;
 }
+
+#list::-webkit-scrollbar{
+    width: 0px;
+}
+
+#list:hover::-webkit-scrollbar{
+    width: 17px;
+}
  
 @media (max-width: 767px) {
     html {
