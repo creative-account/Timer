@@ -59,6 +59,10 @@ input[type="number"] {
     -moz-appearance:textfield; 
 }
 
+input.flex-item{
+    text-align: left;
+}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
