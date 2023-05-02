@@ -8,6 +8,11 @@ function createInput(type) {
     const input = document.createElement("input");
     input.type = type;
     input.classList.add("flex-item");
+    if (type == "text") {
+        input.setAttribute("placeholder","内容");
+    }else if (type == "number") {
+        inputsetAttribute("placeholder","時間");
+    }
     return input;
 }
 
