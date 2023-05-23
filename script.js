@@ -34,3 +34,13 @@ function add_list(){
     appendInputToDiv(textInput);
 
 }
+
+function update(){
+    const clock = document.getElementById("clock");
+    const now = new Date();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+
+    clock.textContent = `${hour}:${minute}:${second}`;
+}
